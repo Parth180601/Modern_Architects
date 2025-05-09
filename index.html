@@ -154,6 +154,15 @@
     document.getElementById("nav-links").classList.toggle("active");
   }
 </script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.fade-in').forEach(el => {
+      el.classList.remove('fade-in');
+      void el.offsetWidth; // Trigger reflow
+      el.classList.add('fade-in');
+    });
+  });
+</script>
 
 </body>
 </html>
