@@ -29,3 +29,5 @@ function changeSlide(direction) {
 
   track.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+const menuIcon = document.querySelector('.menu-icon');
+const mobileNav = document.querySelector('.mobile-nav');
