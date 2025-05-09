@@ -140,9 +140,25 @@
   });
 </script>
 <script>
-  function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-  }
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("open");
+}
+
+function closeMenu() {
+    document.getElementById("menu").classList.remove("open");
+}
+
+// Smooth scrolling behavior (optional)
+document.querySelectorAll('.menu a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 </script>
 <script>
   window.addEventListener("DOMContentLoaded", () => {
