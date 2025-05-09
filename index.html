@@ -160,9 +160,14 @@
       el.classList.remove('fade-in');
       void el.offsetWidth; // Trigger reflow
       el.classList.add('fade-in');
+      window.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelector('.blog-section').classList.add('animate');
+});
+
     });
   });
 </script>
+
 
 </body>
 </html>
