@@ -12,39 +12,48 @@
 <body>
 
   <!-- Navigation -->
-<header>
-    <div class="logo">
-        <img src="logo.png" alt="Logo">
-    </div>
-    <div class="menu-toggle" onclick="toggleMenu()">
-        <span>☰</span> <!-- Hamburger icon -->
-    </div>
-</header>
-
-<nav id="menu" class="menu">
-    <ul>
-        <li><a href="#home" onclick="closeMenu()">Home</a></li>
-        <li><a href="#blog" onclick="closeMenu()">Blog</a></li>
-        <li><a href="#about" onclick="closeMenu()">About Us</a></li>
-        <li><a href="#work" onclick="closeMenu()">Our Work</a></li>
-        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  <nav class="navbar">
+    <a href="/" class="logo">
+      <img src="/assets/Logo.png" alt="Logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#our-work">Our Work</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
+  </nav>
 
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay">
+      <div class="hero-text">
+        <p>Shaping houses into homes</p>
+      </div>
+      <div class="hero-text" data-aos="fade-right">
+        <!-- Hero heading and paragraph -->
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <!-- Hero image -->
+      </div>
+      
+    </div>
+  </header>
 
     <!-- Blog Section -->
     <section class="blog-section" id="blog">
       <h2>Latest Blog Posts</h2>
       <div class="blog-container">
         <article class="blog-post">
-          <img src="/IMG_1021.jpg" alt="Blog 1 Thumbnail" />
+          <img src="/assets/IMG_1021.jpg" alt="Blog 1 Thumbnail" />
           <h3>Blog Post Title 1</h3>
           <p>This is a short description of the first blog post...</p>
           <a href="#">Read More</a>
         </article>
     
         <article class="blog-post">
-          <img src="/IMG_1020.jpg" alt="Blog 2 Thumbnail" />
+          <img src="/assets/IMG_1020.jpg" alt="Blog 2 Thumbnail" />
           <h3>Blog Post Title 2</h3>
           <p>This is a short description of the second blog post...</p>
           <a href="#">Read More</a>
@@ -69,7 +78,7 @@
       </p>
     </div>
     <div class="about-image">
-      <img src="about us.png" alt="Team or workspace" />
+      <img src="assets/about us.png" alt="Team or workspace" />
     </div>
   </div>
 </section>
@@ -79,19 +88,19 @@
   <h2 data-aos="fade-up">Our Work</h2>
   <div class="project-grid">
     <div class="project-card">
-      <img src="/Room.JPG" alt="Room Interior" />
+      <img src="assets/Room.JPG" alt="Room Interior" />
       <div class="card-text">
         <h3>Room Interior</h3>
       </div>
     </div>
     <div class="project-card">
-      <img src="/IMG_1020.jpg" alt="Factory Layout" />
+      <img src="assets/IMG_1020.jpg" alt="Factory Layout" />
       <div class="card-text">
         <h3>Factory Layout</h3>
       </div>
     </div>
     <div class="project-card">
-      <img src="/project3.jpg" alt="Luxury Apartment" />
+      <img src="assets/project3.jpg" alt="Luxury Apartment" />
       <div class="card-text">
         <h3>Luxury Apartment</h3>
       </div>
@@ -114,9 +123,9 @@
 
 <!-- Social Media Links -->
 <div class="social-links">
-  <a href="https://instagram.com" target="_blank"><img src="/instagram.png" alt="Instagram" /></a>
-  <a href="https://linkedin.com" target="_blank"><img src="/gmail.png" alt="LinkedIn" /></a>
-  <a href="https://facebook.com" target="_blank"><img src="/facebook.png" alt="Facebook" /></a>
+  <a href="https://instagram.com" target="_blank"><img src="assets/instagram.png" alt="Instagram" /></a>
+  <a href="https://linkedin.com" target="_blank"><img src="assets/gmail.png" alt="LinkedIn" /></a>
+  <a href="https://facebook.com" target="_blank"><img src="assets/facebook.png" alt="Facebook" /></a>
 </div>
 
 <!-- Google Map Embed -->
@@ -139,39 +148,6 @@
     once: true      // Only animate once on scroll
   });
 </script>
-<script>
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("open");
-}
-
-function closeMenu() {
-    document.getElementById("menu").classList.remove("open");
-}
-
-// Smooth scrolling behavior (optional)
-document.querySelectorAll('.menu a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        document.getElementById(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-</script>
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('.fade-in').forEach(el => {
-      el.classList.remove('fade-in');
-      void el.offsetWidth; // Trigger reflow
-      el.classList.add('fade-in');
-});
-
-    });
-  });
-</script>
-
 
 </body>
 </html>
