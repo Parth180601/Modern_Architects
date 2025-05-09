@@ -371,4 +371,106 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ------------------- Responsive Styles ------------------- */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+  }
+
+  /* Hero Section */
+  .overlay {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  /* About Us Section */
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-text,
+  .about-image {
+    flex: 1 1 100%;
+  }
+
+  /* Our Work Section */
+  .our-work {
+    padding: 40px 20px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  /* Social Links */
+  .social-links {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  /* Map */
+  .map-container iframe {
+    width: 100% !important;
+    height: 250px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .blog-post {
+    width: 100%;
+  }
+
+  .about-text h2,
+  .contact h2,
+  .our-work h2 {
+    font-size: 28px;
+  }
+}
 
