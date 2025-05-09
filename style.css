@@ -528,8 +528,27 @@ html {
 
 /* Hamburger icon styling (if not already present) */
 .hamburger {
+  display: none;
   font-size: 2rem;
   cursor: pointer;
+  color: #333;
 }
 
-/* Optional: Add overlay blur or backdrop-filter if desired */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+  }
+}
+

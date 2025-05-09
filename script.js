@@ -1,13 +1,25 @@
-// Optional: Highlight active link on scroll
+AOS.init({
+  duration: 1000,
+  once: true
+});
+
+// Mobile Nav Toggle
+const menuToggle = document.getElementById('menuToggle');
+const mobileNav = document.getElementById('mobileNav');
+
+menuToggle.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+});
+
+// ScrollSpy - highlight active nav
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
   let current = "";
-
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
-    if (scrollY >= sectionTop - 60) {
+    if (pageYOffset >= sectionTop - 60) {
       current = section.getAttribute("id");
     }
   });
@@ -19,15 +31,3 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-let currentSlide = 0;
-function changeSlide(direction) {
-  const track = document.getElementById("carouselTrack");
-  const slides = track.querySelectorAll("img");
-  const totalSlides = slides.length;
-
-  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-
-  track.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
-const menuIcon = document.querySelector('.menu-icon');
-const mobileNav = document.querySelector('.mobile-nav');
