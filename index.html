@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Architects</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="/" class="logo">
+      <img src="/assets/Logo.png" alt="Logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#our-work">Our Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay">
+      <div class="hero-text">
+        <p>Shaping houses into homes</p>
+      </div>
+      <div class="hero-text" data-aos="fade-right">
+        <!-- Hero heading and paragraph -->
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <!-- Hero image -->
+      </div>
+      
+    </div>
+  </header>
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-container">
+        <article class="blog-post">
+          <img src="/assets/IMG_1021.jpg" alt="Blog 1 Thumbnail" />
+          <h3>Blog Post Title 1</h3>
+          <p>This is a short description of the first blog post...</p>
+          <a href="#">Read More</a>
+        </article>
+    
+        <article class="blog-post">
+          <img src="/assets/IMG_1020.jpg" alt="Blog 2 Thumbnail" />
+          <h3>Blog Post Title 2</h3>
+          <p>This is a short description of the second blog post...</p>
+          <a href="#">Read More</a>
+        </article>
+    
+        <!-- Add more articles as needed -->
+      </div>
+    </section>
+    
+
+  <!-- About Us Section -->
+<section class="about-us" id="about-us">
+  <div class="about-container">
+    <div class="about-text" data-aos="fade-up-right">
+      <h2>About Us</h2>
+      <p>
+        At Modern Architects, we believe architecture goes beyond design — it shapes how people live and experience space. 
+        With over a decade of experience, we specialize in blending innovation with functionality to create spaces that feel like home.
+      </p>
+      <p>
+        From luxury villas to smart urban interiors, our work reflects a commitment to precision, sustainability, and artistic vision.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="assets/about us.png" alt="Team or workspace" />
+    </div>
+  </div>
+</section>
+
+  <!-- Our Work Section -->
+<section class="our-work" id="our-work">
+  <h2 data-aos="fade-up">Our Work</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="assets/Room.JPG" alt="Room Interior" />
+      <div class="card-text">
+        <h3>Room Interior</h3>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="assets/IMG_1020.jpg" alt="Factory Layout" />
+      <div class="card-text">
+        <h3>Factory Layout</h3>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="assets/project3.jpg" alt="Luxury Apartment" />
+      <div class="card-text">
+        <h3>Luxury Apartment</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <h2 data-aos="fade-up">Contact Us</h2>
+    <form class="contact-form" data-aos="zoom-in-up" action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Social Media Links -->
+<div class="social-links">
+  <a href="https://instagram.com" target="_blank"><img src="assets/instagram.png" alt="Instagram" /></a>
+  <a href="https://linkedin.com" target="_blank"><img src="assets/gmail.png" alt="LinkedIn" /></a>
+  <a href="https://facebook.com" target="_blank"><img src="assets/facebook.png" alt="Facebook" /></a>
+</div>
+
+<!-- Google Map Embed -->
+<div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7568.358353153743!2d73.84887719206829!3d18.47554143043692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eaaae9ce06a1%3A0x396e56617135f3aa!2sSahakar%20Nagar%2C%20Parvati%20Paytha%2C%20Pune%2C%20Maharashtra%20411009!5e0!3m2!1sen!2sin!4v1746767854126!5m2!1sen!2sin" width="1800" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Modern Architects. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true      // Only animate once on scroll
+  });
+</script>
+
+</body>
+</html>
